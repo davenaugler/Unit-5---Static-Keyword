@@ -8,7 +8,9 @@ public class StaticExample {
 	int someNumber = 10;
 
 	public static void main(String[] args) {
-		if (someNumber > 11) {
+		StaticExample staticObject = new StaticExample();
+		
+		if (staticObject.someNumber > 11) {
 			System.out.println("say something");
 		}
 
