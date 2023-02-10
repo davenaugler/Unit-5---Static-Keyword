@@ -13,6 +13,36 @@ public class StaticExample {
 		if (staticObject.someNumber > 11) {
 			System.out.println("say something");
 		}
+		
+		
+		// ------ //
+		// CAN DO //
+		// ------ //
+		// new instance of the Human is created giving you the ability to have access
+		// to getStageOfLife instance method
+		Human aChild = new Human();
+		aChild.age = 12;
+		Human bChild = new Human();
+		bChild.age = 40;
+		System.out.println("age is 12 - " + aChild.getStageOfLife());
+		System.out.println("age is 40 - " + bChild.getStageOfLife());
+		
+		// ---------- //
+		// CAN-NOT DO //
+		// ---------- //
+//		Human.getStageOfLife();
+		
+		// ------ //
+		// CAN DO //
+		// ------ //
+		// (Human) This is not an instance, this is the class itself referencing class variables (static)
+		if (Human.ADULT_AGE < 10) {
+			System.out.println("do something...");
+		}
+		
+		
+
+		
 
 	}
 
