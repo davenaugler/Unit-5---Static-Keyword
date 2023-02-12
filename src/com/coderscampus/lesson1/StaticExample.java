@@ -21,11 +21,12 @@ public class StaticExample {
 		// new instance of the Human is created giving you the ability to have access
 		// to getStageOfLife instance method
 		Human aChild = new Human();
-		aChild.age = 12;
+		aChild.setAge(12);
 		Human bChild = new Human();
-		bChild.age = 40;
+		bChild.setAge(130);
 		System.out.println("age is 12 - " + aChild.getStageOfLife());
 		System.out.println("age is 40 - " + bChild.getStageOfLife());
+		
 		
 		// ---------- //
 		// CAN-NOT DO //

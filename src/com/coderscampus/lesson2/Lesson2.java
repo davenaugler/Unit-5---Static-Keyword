@@ -15,13 +15,23 @@ public class Lesson2 {
 	// changing the way the code can be used, and there we enter abstraction and data hiding
 	// A very good example of abstraction and data hiding is a very common use case, we hide
 	// instance variables. Adding an access modifier to an instance variable...
+	// Abstraction is all about reducing complexity aka hiding certain details that don't need to be accessed.
 	public static void main(String[] args) {
 		Human daveNaugler = new Human();
-		daveNaugler.age = 36;
-		System.out.println("Dave is considered an " + daveNaugler.getStageOfLife());
+//		daveNaugler.age = 36;
+//		daveNaugler.setAge(100);
+//		System.out.println("Dave is considered a " + daveNaugler.getStageOfLife());
+		
+		daveNaugler.setAge(-1);
+		System.out.println(daveNaugler.getAge());
+		daveNaugler.setAge(160);
+		System.out.println(daveNaugler.getAge());
+		daveNaugler.setAge(36);
+		System.out.println(daveNaugler.getAge());
+		
 		
 
-	}
+	} 
 	
 	
 	

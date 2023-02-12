@@ -11,6 +11,21 @@ public class Human {
 	// within the scope of it's own class
 	private int age;
 	
+	
+	// Getting will return you the value (this is a method)
+	public int getAge() {
+		return age;
+	}
+	
+	// Setting - will change the value (this is a method)
+	public void setAge(int age) {
+		if (age < 0 || age > 130) {
+			System.out.println(age + ", is not a valid age. A valid age is between 0 and 130");
+			return;
+		}
+		this.age = age;
+	}
+	
 	// non-static method - belongs to an instance of the class
 	public String getStageOfLife () {
 		if (age < TEENAGER_AGE) {
